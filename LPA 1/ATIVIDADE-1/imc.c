@@ -7,7 +7,7 @@ float imc(float altura, float peso){
 }
 
 int main(){
-	float altura, peso; 
+    float altura, peso; 
     printf("Digite seu peso: ");
     scanf("%f", &peso);
     printf("Digite seu altura: ");
