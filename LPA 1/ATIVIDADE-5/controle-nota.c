@@ -5,25 +5,24 @@ int main(int argc, char const *argv[])
     int a, b; 
     float somador = 0; 
     float maior = 0;  
-    float menor = 0;
+    float menor = 10;
     int aprovado = 0; 
     float media, nota;
     printf("Digite a quantidade de alunos: ");
     scanf("%d", &a);
 	printf("\n");
 	
-    float notas[a]; 
-
+	float notas[a];
     for (int i = 0; i < a; i++){
         printf("Digite a nota do aluno: ");
         scanf("%f", &nota); 
 	
-        /*while (nota < 0 || nota > 10);{
+        while (nota < 0 || nota > 10);{
             printf("Nota invalida! Digite a nota novamente: ");
             scanf("%f", &nota);
-        } */
+        }
         
-        
+        float notas[i] = nota; 
         
 
 	        if(nota >= 6){
