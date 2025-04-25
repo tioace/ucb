@@ -22,7 +22,7 @@ int main(int argc, char const *argv[])
             scanf("%f", &nota);
         }
         
-        float notas[i] = nota; 
+        notas[i] = nota; 
         
 
 	        if(nota >= 6){
@@ -54,7 +54,7 @@ int main(int argc, char const *argv[])
     scanf("%d", &b);
 
     printf("\n\n-------------------------------------\n\n");
-    printf("Nota do aluno na posicao %d eh: %.2f\n", b, qtd_aluno[b]);
+    printf("Nota do aluno na posicao %d eh: %.2f\n", b, notas[b]);
     printf("\n\n-------------------------------------\n\n");
 
     return 0;
