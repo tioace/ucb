@@ -11,48 +11,62 @@ void imprimir(struct Aluno a){
     printf("Aluno %s ---- Nota: %.2f", a.nome, a.nota);
 }
 
-float menor (float menor){
-    float x = 2147483647; 
-    if (menor < x){
-        x = menor;
+struct Aluno menor (struct Aluno a[]){
+    float x = 2147483647;
+    struct Aluno m; 
+    
+    for(int i = 0; i < 5; i++){        
+        if (a[i].nota < x){
+            x = a[i].nota;
+            m = a[i];       
+        }
     }
-    return x; 
+             
+    return m; 
 }
 
-float maior (float maior){
+struct Aluno maior (struct Aluno a[]){   
     float x = - 2147483647; 
-    if (maior > x){
-        x = maior;
+    struct Aluno M;
+
+    for(int i = 0; i < 5; i++){        
+        if (a[i].nota > x){
+            x = a[i].nota;
+            M = a[i];
+        }
     }
-    return x; 
+
+    return M;
 }
 
 int main(int argc, char const *argv[]){
     int n; 
-    struct Aluno a [3]; 
-    float m [3], M [3]; 
+    struct Aluno a [5]; 
+    struct Aluno m, M; 
 
-    for (int i = 0; i < 3; i++){
+    for (int i = 0; i < 5; i++){
         printf("\nDigite o nome do aluno: ");
         fgets(a[i].nome, TAM_NOME, stdin); 
         printf("Digite a nota do aluno: ");
         scanf("%f", &a[i].nota);
         fgetc(stdin); 
-        M = maior(a[i].nota);
-        m = menor(a[i].nota);
     }
 
-    printf("\n----------------------------------------\n\n"); 
+    M = maior(a);
+    m = menor(a);
     
-    for (int i = 0; i < 3; i++){
-        printf("\nAluno %s Nota: %.2f\n", a[i].nome, a[i].nota);
+
+    printf("\n\n----------------------------------------\n\n"); 
+    
+    for (int i = 0; i < 5; i++){
+        printf("\nAluno: %sNota: %.2f\n", a[i].nome, a[i].nota);
         
     }
     
-    printf("\n----------------------------------------\n\n"); 
+    printf("\n\n----------------------------------------\n\n\n"); 
     
-    printf("Menor nota: %.2f", m);
-    printf("Maior nota: %.2f", M);
+    printf("MAIOR nota: %.2f ----- Aluno: %s", M.nota, M.nome);
+    printf("MENOR nota: %.2f ----- Aluno: %s",m.nota, m.nome);
 
     return 0;
 }
