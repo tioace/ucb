@@ -39,10 +39,25 @@ struct Aluno maior (struct Aluno a[]){
     return M;
 }
 
+/*float media (float nota){
+    float soma;
+    int cont; 
+
+    for (int i = 0; i < 5; i++){
+        soma += nota; 
+        cont++; 
+    }
+
+    float m = soma/cont; 
+
+    return m; 
+}*/
+
 int main(int argc, char const *argv[]){
     int n; 
     struct Aluno a [5]; 
     struct Aluno m, M; 
+    float med, soma, cont; 
 
     for (int i = 0; i < 5; i++){
         printf("\nDigite o nome do aluno: ");
@@ -50,7 +65,11 @@ int main(int argc, char const *argv[]){
         printf("Digite a nota do aluno: ");
         scanf("%f", &a[i].nota);
         fgetc(stdin); 
+        soma += a[i].nota;
+        cont++; 
     }
+
+    med = soma / cont; 
 
     M = maior(a);
     m = menor(a);
@@ -64,7 +83,7 @@ int main(int argc, char const *argv[]){
     }
     
     printf("\n\n----------------------------------------\n\n\n"); 
-    
+    printf("MEDIA da turma: %.2f\n\n", med) ;
     printf("MAIOR nota: %.2f ----- Aluno: %s", M.nota, M.nome);
     printf("MENOR nota: %.2f ----- Aluno: %s",m.nota, m.nome);
 
