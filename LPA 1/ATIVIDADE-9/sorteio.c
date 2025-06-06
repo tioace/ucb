@@ -3,8 +3,8 @@
 #include <time.h>
 
 int sorteio(int menor, int maior){
-    printf("intervalo da rand: [%d,%d]\n", )
-
+    int n = menor + (rand() % maior ); 
+    return n; 
 }
 
 
