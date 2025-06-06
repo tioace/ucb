@@ -21,7 +21,8 @@ void salvar (int menor, int maior, int chute, int sorteio, const char *resultado
     
     fprintf(arq, "Minimo: %d | Maximo: %d | Numuero chutado: %d | Numuero sorteado: %d | Resultado: %s\n", menor, maior, chute, sorteio, resultado);
     fclose(arq);
-    printf("Tentativa salva em '%s'!\n", ARQUIVO);
+    printf("\n\nResultado: %s\n", resultado);
+    printf("Tentativa salva em '%s'!\n\n", ARQUIVO);
 }
 
 

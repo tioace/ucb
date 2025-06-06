@@ -1,3 +1,7 @@
-Minimo: 2 | Maximo: 8 | Numuero chutado: 5 | Numuero sorteado: 8 | Resultado: ERROU! :(
 Minimo: 2 | Maximo: 8 | Numuero chutado: 5 | Numuero sorteado: 2 | Resultado: ERROU! :(
+Minimo: 2 | Maximo: 8 | Numuero chutado: 5 | Numuero sorteado: 2 | Resultado: ERROU! :(
+Minimo: 2 | Maximo: 8 | Numuero chutado: 5 | Numuero sorteado: 6 | Resultado: ERROU! :(
+Minimo: 2 | Maximo: 8 | Numuero chutado: 5 | Numuero sorteado: 8 | Resultado: ERROU! :(
+Minimo: 2 | Maximo: 8 | Numuero chutado: 5 | Numuero sorteado: 6 | Resultado: ERROU! :(
+Minimo: 2 | Maximo: 8 | Numuero chutado: 5 | Numuero sorteado: 8 | Resultado: ERROU! :(
 Minimo: 2 | Maximo: 8 | Numuero chutado: 5 | Numuero sorteado: 5 | Resultado: ACERTOU! :)
