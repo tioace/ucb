@@ -1,0 +1,10 @@
+(11) 98765-4321  –  João Silva  
+(21) 99876-5432  –  Maria Oliveira  
+(27) 91234-8765  –  Rafael Almeida  
+(31) 98765-1234  –  Carlos Souza  
+(41) 91234-5678  –  Ana Pereira  
+(51) 99123-4567  –  Pedro Costa  
+(61) 99876-1234  –  Laura Mendes  
+(71) 98765-6789  –  Marcos Santos  
+(81) 99111-2222  –  Fernanda Lima  
+(84) 99876-5555  –  Juliana Rocha  
