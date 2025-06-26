@@ -8,10 +8,10 @@ Este tutorial explica como compilar e usar o programa `ordenador_telefonico.c`, 
 - Um compilador C (ex: `gcc`).  
 - Um arquivo de texto (`lista.txt`) com contatos no formato:  
   ```
-  Nome - (DDD) Telefone
+  (DDD) Telefone - Nome 
   Exemplo:
-  João Silva - (11) 98765-4321
-  Maria Oliveira - (21) 99876-5432
+  (11) 98765-4321 – João Silva  
+  (21) 99876-5432 – Maria Oliveira 
   ```
 
 ---
@@ -19,7 +19,7 @@ Este tutorial explica como compilar e usar o programa `ordenador_telefonico.c`, 
 ## **🔧 Passo 1: Compilar o Programa**  
 Abra o terminal e compile o código com o seguinte comando:  
 ```sh
-gcc ordenador_telefonico.c -o ordenador
+gcc ordenador.c -o ordenador.exe
 ```
 Isso gera um executável chamado `ordenador`.  
 
@@ -31,19 +31,19 @@ O programa é executado via linha de comando com os seguintes argumentos:
 ### **Opções:**  
 | Comando          | Descrição                          |  
 |------------------|-----------------------------------|  
-| `./ordenador -n lista.txt` | Ordena por **nome** (A-Z). |  
-| `./ordenador -t lista.txt` | Ordena por **telefone** (crescente). |  
+| `./ordenador nome` | Ordena por **nome** (A-Z). |  
+| `./ordenador ddd` | Ordena por **telefone** (crescente). |  
 
 ### **Exemplo 1: Ordenar por Nome**  
 ```sh
-./ordenador nome lista.txt
+./ordenador nome 
 ```
 **Saída:**  
 - Um novo arquivo `lista_sorted.txt` será criado, com os nomes em ordem alfabética.  
 
 ### **Exemplo 2: Ordenar por Telefone**  
 ```sh
-./ordenador ddd lista.txt
+./ordenador ddd 
 ```
 **Saída:**  
 - Um novo arquivo `lista_sorted.txt` será criado, com os telefones em ordem crescente.  
@@ -54,7 +54,7 @@ O programa é executado via linha de comando com os seguintes argumentos:
 | Erro                          | Causa                           | Solução                      |  
 |-------------------------------|--------------------------------|-----------------------------|  
 | `Erro ao abrir arquivo`       | Arquivo não existe ou está com nome errado. | Verifique se o arquivo está no mesmo diretório e se o nome está correto. |  
-| `Opção inválida`              | Uso incorreto dos argumentos (`-n` ou `-t`). | Use `-n` para nome ou `-t` para telefone. |  
+| `Opção inválida`              | Uso incorreto dos argumentos (`nome` ou `ddd`). | Use `nome` para nome ou `ddd` para ordernar em ordem crescente a partir do ddd. |  
 | `Arquivo vazio`               | O arquivo não contém dados. | Adicione contatos no formato correto. |  
 
 ---
