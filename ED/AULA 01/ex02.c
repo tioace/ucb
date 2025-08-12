@@ -105,5 +105,12 @@ int main(int argc, char const *argv[]){
     Fracao f6 = criarF(5, 6); 
     Fracao f7 = criarF(4, 9); 
     exibirF(subtracaoF(f6, f7));
+
+    Fracao f8 = criarF(3, 4); 
+    Fracao f9 = criarF(7, 9); 
+    Fracao f10 = criarF(5, 12); 
+    Fracao f11 = somarF(subtracaoF(f8, f9), f10);
+    exibirF(f11); 
     return 0;
+
 }
