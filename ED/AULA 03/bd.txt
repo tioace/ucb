@@ -1,0 +1,4 @@
+12 1200.00 Andre
+50 800.00 Bruno
+34 -20000.00 Carlos
+48 100.00 Davi Eduardo

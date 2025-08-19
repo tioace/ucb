@@ -1,0 +1,9 @@
+===== Nota Fiscal =====
+
+Arroz: 2 * 2.50 = 0.00
+Feijao: 3 * 3.00 = 0.00
+Carne: 1 * 15.75 = 0.00
+Leite: 4 * 2.50 = 0.00
+
+
+Valor total = 0.00
