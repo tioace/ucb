@@ -13,16 +13,17 @@ int main(int argc, char const *argv[]){
 
     int qtd; 
     float valor; 
-    float soma = valor * qtd; 
-    float total; 
     char prod[50]; 
+    float total = 0.0; 
 
     //printf("Arquivo aberto/criado"); 
     fprintf(t, "===== Nota Fiscal =====\n\n");
     
     while (fscanf(fp, "%s %d %f\n", &prod, &qtd, &valor) == 3){
+        float soma = valor * (float) qtd; 
+
         printf("%s: %d * %.2f = %.2f\n", prod, qtd, valor, soma); 
-        fprintf(t, "%s: %d * %.2f = %.2f\n", prod, qtd, valor, soma, total); 
+        fprintf(t, "%s: %d * %.2f = %.2f\n", prod, qtd, valor, soma); 
         total += soma;
     }
     
