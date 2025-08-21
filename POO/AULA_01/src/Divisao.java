@@ -1,9 +1,8 @@
-public class Soma {
-
+public class Divisao {
     private int n1;
     private int n2;
 
-    Soma(int n1, int n2){
+    Divisao(int n1, int n2){
         super(); 
         this.n1 = n1; 
         this.n2 = n2;
@@ -25,15 +24,13 @@ public class Soma {
         this.n2 = n2;
     }
 
-    public int Somar(int n1, int n2){
-        int soma = n1 + n2; 
-        return soma; 
+    public int Div(int n1, int n2){
+        int div = n1 / n2; 
+        return div; 
     }
 
     public String toString(){
-        String t = n1 + " + " + n2 + " = " + Somar(n1, n2); 
+        String t = n1 + " / " + n2 + " = " + Div(n1, n2); 
         return t; 
     }
-
-
 }
