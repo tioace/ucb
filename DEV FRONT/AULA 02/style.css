@@ -1,0 +1,15 @@
+.teste{
+    text-align: center;
+    /*background-color: rgb(150, 1, 1);*/
+    color:rgb(150, 1, 1) ;
+}
+
+a{
+    text-decoration: none;
+    color:rgb(150, 1, 1) ;
+    pointer-events: painted;
+}
+
+a:hover{
+    color: blue;
+}
