@@ -55,7 +55,7 @@ public class Carro {
         
         if(velocidade > 0){
             velocidade -= 5;
-        }else{
+        }else if(velocidade <= 0 || velocidade - 5 < 0){
             velocidade = 0; 
         }
 
