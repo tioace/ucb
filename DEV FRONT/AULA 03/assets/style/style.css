@@ -1,0 +1,29 @@
+h1{
+    text-align: center;
+}
+
+h1.teste:nth-child(1) a{
+    /*background-color: rgb(150, 1, 1);*/
+    color:rgb(150, 1, 1) ;
+}
+
+h1.teste:nth-child(2) a{
+    /*background-color: rgb(150, 1, 1);*/
+    color:rgb(1, 150, 100) ;
+}
+
+h1.teste:nth-child(3) a{
+    /*background-color: rgb(150, 1, 1);*/
+    color:rgb(223, 125, 96) ;
+    pointer-events: painted;
+}
+
+
+a{
+    text-decoration: none;
+    /*color:rgb(150, 1, 1) ;*/
+}
+
+a:hover{
+    color: blue;
+}
