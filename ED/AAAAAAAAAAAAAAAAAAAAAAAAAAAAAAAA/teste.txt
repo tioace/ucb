@@ -1,0 +1,120 @@
+    #include <stdio.h>
+    #include <stdlib.h>
+    #include <string.h>
+    #include "funcao.h"
+
+    int ContarLinha(char * arquivo){
+        FILE *fp = fopen(arquivo, "r"); 
+        if (fp == NULL){
+            printf("ERRO: arquivo nao pode ser aberto!\n");
+            exit(1); 
+        }
+        
+        int count = 0;
+        char buffer[1024];
+        fgets(buffer, sizeof(buffer), fp); // pula o cabeçalho
+        while (fgets(buffer, sizeof(buffer), fp) != NULL) {
+            count++;
+        }
+        fclose(fp);
+    
+        return count; 
+    }
+
+    Processo * lerDados(char * arquivo){
+        
+        printf("Arquivo a ser aberto: %s\n", arquivo); 
+        FILE *fp = fopen(arquivo, "r"); 
+        if (fp == NULL){
+            printf("ERRO: arquivo nao pode ser aberto!\n");
+            exit(1); 
+        }
+        
+        int tamanho = ContarLinha(arquivo);
+        printf("Encontradas %d linhas de dados\n", tamanho);
+
+        Processo * x = malloc(tamanho * sizeof(Processo)); 
+        if (x == NULL) {
+            printf("ERRO: memoria insuficiente!\n");
+            fclose(fp);
+            exit(1); 
+        }
+        
+        memset(x, 0, tamanho * sizeof(Processo));
+
+        int i = 0;
+        char cabecalho[1024]; 
+        fgets(cabecalho, sizeof(cabecalho), fp);
+
+        // Lê linha por linha para melhor controle
+        char linha[1024];
+        while (fgets(linha, sizeof(linha), fp) != NULL && i < tamanho) {
+            // Remove quebras de linha
+            linha[strcspn(linha, "\r\n")] = '\0';
+            
+            // Usa sscanf para ler da string já processada
+            int result = sscanf(linha, "%d;%[^;];%[^;];%[^;];%[^;];%[^;];%d;%d;%d;%[^;];%d;%d;%d;%d;%d;%d;%d;%d;%[^;];%d;%d;%d;%d;%d;%d;%d;%d",
+                &x[i].id_processo, 
+                x[i].numero_sigilo, x[i].sigla_grau, x[i].procedimento, 
+                x[i].ramo_justica, x[i].sigla_tribunal, &x[i].id_tribunal, 
+                &x[i].recurso, &x[i].id_ultimo_oj, x[i].dt_recebimento, 
+                &x[i].id_ultima_classe, &x[i].flag_violencia_domestica, 
+                &x[i].flag_feminicidio, &x[i].flag_ambiental, &x[i].flag_quilombolas, 
+                &x[i].flag_indigenas, &x[i].flag_infancia, &x[i].decisao, 
+                x[i].dt_resolvido, &x[i].cnm1, &x[i].primeirasentm1, &x[i].baixm1, 
+                &x[i].decm1, &x[i].mpum1, &x[i].julgadom1, &x[i].desm1, &x[i].susm1);
+            
+            if (result >= 20) { // Pelo menos os campos obrigatórios
+                i++;
+            } else {
+                // Tenta uma leitura alternativa para linhas problemáticas
+                printf("Tentando leitura alternativa para linha %d...\n", i+1);
+                
+                // Lê campos individuais manualmente
+                char *token = strtok(linha, ";");
+                int field = 0;
+                
+                while (token != NULL && field < 27) {
+                    switch (field) {
+                        case 0: x[i].id_processo = atoi(token); break;
+                        case 1: strncpy(x[i].numero_sigilo, token, sizeof(x[i].numero_sigilo)-1); break;
+                        case 2: strncpy(x[i].sigla_grau, token, sizeof(x[i].sigla_grau)-1); break;
+                        case 3: strncpy(x[i].procedimento, token, sizeof(x[i].procedimento)-1); break;
+                        case 4: strncpy(x[i].ramo_justica, token, sizeof(x[i].ramo_justica)-1); break;
+                        case 5: strncpy(x[i].sigla_tribunal, token, sizeof(x[i].sigla_tribunal)-1); break;
+                        case 6: x[i].id_tribunal = atoi(token); break;
+                        case 7: x[i].recurso = atoi(token); break;
+                        case 8: x[i].id_ultimo_oj = atoi(token); break;
+                        case 9: strncpy(x[i].dt_recebimento, token, sizeof(x[i].dt_recebimento)-1); break;
+                        case 10: x[i].id_ultima_classe = atoi(token); break;
+                        case 11: x[i].flag_violencia_domestica = atoi(token); break;
+                        case 12: x[i].flag_feminicidio = atoi(token); break;
+                        case 13: x[i].flag_ambiental = atoi(token); break;
+                        case 14: x[i].flag_quilombolas = atoi(token); break;
+                        case 15: x[i].flag_indigenas = atoi(token); break;
+                        case 16: x[i].flag_infancia = atoi(token); break;
+                        case 17: x[i].decisao = atoi(token); break;
+                        case 18: strncpy(x[i].dt_resolvido, token, sizeof(x[i].dt_resolvido)-1); break;
+                        case 19: x[i].cnm1 = atoi(token); break;
+                        case 20: x[i].primeirasentm1 = atoi(token); break;
+                        case 21: x[i].baixm1 = atoi(token); break;
+                        case 22: x[i].decm1 = atoi(token); break;
+                        case 23: x[i].mpum1 = atoi(token); break;
+                        case 24: x[i].julgadom1 = atoi(token); break;
+                        case 25: x[i].desm1 = atoi(token); break;
+                        case 26: x[i].susm1 = atoi(token); break;
+                    }
+                    token = strtok(NULL, ";");
+                    field++;
+                }
+                
+                if (field >= 20) {
+                    i++;
+                }
+            }
+        }
+        
+        fclose(fp);
+        printf("Total de registros lidos com sucesso: %d\n", i);
+        return x;
+    }

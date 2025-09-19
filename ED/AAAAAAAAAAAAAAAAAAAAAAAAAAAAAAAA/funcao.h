@@ -33,6 +33,6 @@ typedef struct{
 } Processo;
 
 Processo * lerDados(char * arquivo);
-//int ContarLinha(char * arquivo);
+int ContarLinha(char * arquivo);
 
 #endif
