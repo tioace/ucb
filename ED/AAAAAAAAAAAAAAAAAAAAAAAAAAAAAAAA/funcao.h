@@ -33,6 +33,12 @@ typedef struct{
 } Processo;
 
 Processo * lerDados(char * arquivo);
+
+double calcularMeta1(Processo * processos, int tamanho);
+
+int contarPorFlag (Processo * processos, int tamanho, int tipo_flag);
 int ContarLinha(char * arquivo);
+int antigo(Processo * processos, int tamanho); 
+int diasEntreDatas (Processo processo);
 
 #endif

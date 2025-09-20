@@ -118,3 +118,105 @@
         printf("Total de registros lidos com sucesso: %d\n", i);
         return x;
     }
+
+
+    int feminicidio(char * arquivo){
+    int tamanho = ContarLinha(arquivo);
+    Processo * processos = lerDados(arquivo);
+    int fem = 0;
+
+    for (int i = 0; i < tamanho; i++) {
+        if (processos[i].flag_feminicidio != 0) {
+            fem++; 
+        }
+    }
+
+    free(processos);
+    printf("Encontrados %d processos relacionados a feminicidio.\n", fem);
+    return fem;
+}
+
+int ambientais(char * arquivo){
+    int tamanho = ContarLinha(arquivo);
+    Processo * processos = lerDados(arquivo);
+    int amb = 0;
+
+    for (int i = 0; i < tamanho; i++) {
+        if (processos[i].flag_ambiental != 0) {
+            amb++; 
+        }
+    }
+
+    free(processos);
+    printf("Encontrados %d processos relacionados a meio ambiente.\n", amb);
+    return amb;
+}
+
+int quilombolas(char * arquivo){
+    int tamanho = ContarLinha(arquivo);
+    Processo * processos = lerDados(arquivo);
+    int qui = 0;
+
+    for (int i = 0; i < tamanho; i++) {
+        if (processos[i].flag_quilombolas != 0) {
+            qui++; 
+        }
+    }
+
+    free(processos);
+    printf("Encontrados %d processos relacionados a quilombolas.\n", qui);
+    return qui;
+}
+
+int indigenas(char * arquivo){
+    int tamanho = ContarLinha(arquivo);
+    Processo * processos = lerDados(arquivo);
+    int ind = 0;
+
+    for (int i = 0; i < tamanho; i++) {
+        if (processos[i].flag_indigenas != 0) {
+            ind++; 
+        }
+    }
+
+    free(processos);
+    printf("Encontrados %d processos relacionados a indigenas.\n", ind);
+    return ind;
+}
+
+int domestica(char * arquivo){
+    int tamanho = ContarLinha(arquivo);
+    Processo * processos = lerDados(arquivo);
+    int dom = 0;
+
+    for (int i = 0; i < tamanho; i++) {
+        if (processos[i].flag_violencia_domestica != 0) {
+            dom++; 
+        }
+    }
+
+    free(processos);
+    printf("Encontrados %d processos relacionados a violencia domestica.\n", dom);
+    return dom;
+}
+
+int infantojuvenil (char * arquivo){
+    int tamanho = ContarLinha(arquivo);
+    Processo * processos = lerDados(arquivo);
+    int inf = 0;
+
+    for (int i = 0; i < tamanho; i++) {
+        if (processos[i].flag_infancia != 0) {
+            inf++; 
+        }
+    }
+
+    free(processos);
+    printf("Encontrados %d processos relacionados a infancia.\n", inf);
+    return inf;    
+}
+
+int tempo (char * arquivo){
+return 0;
+}
+
