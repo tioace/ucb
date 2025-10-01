@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/style/page2.css">
+    
+    <title>MEU SITE</title>
+</head>
+<body>
+    <!-- O header é padrão para todas as páginas -->
+    <header>
+        <a href="#" class="logo">
+            <img src="../assets/img/logo.png" width="120px" height="120px" href="../index.html">  
+            <span>ByteHub</span>
+        </a>
+        <div class="menu">
+        </div>
+        
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="#">Cursos ▼</a>
+                <ul>
+                    <li><a href="../pages/page2.html">HTML Basico</a></li>
+                    <li><a href="../pages/page3.html">CSS Basico</a></li>
+                    <li><a href="../pages/page4.html">JavaScript</a></li>
+                    <li><a href="../pages/page5.html">Web Design</a></li>
+                </ul>
+                <li><a href="../pages/page6.html">Contato</a></li>
+                </li>
+            </ul>
+        </nav>
+    </header>    
+    
+<main class="conteudo-exercicio">
+        <h1>HTML Básico: Estrutura, Títulos, Parágrafos e Comentários</h1>
+
+        <section class="secao-titulos">
+            <h2>Hierarquia de Títulos HTML</h2>
+            <p>O HTML oferece 6 níveis de cabeçalho, de &lt;h1&gt; a &lt;h6&gt;, que ajudam a estruturar o conteúdo da sua página de forma semântica.</p>
+            
+            <div class="exemplo-titulos">
+                <h1>&lt;h1&gt; - Título Principal da Página</h1>
+                <h2>&lt;h2&gt; - Seções Principais</h2>
+                <h3>&lt;h3&gt; - Subseções</h3>
+                <h4>&lt;h4&gt; - Tópicos dentro das Subseções</h4>
+                <h5>&lt;h5&gt; - Detalhes Específicos</h5>
+                <h6>&lt;h6&gt; - Informações Menos Relevantes</h6>
+            </div>
+            
+            <p><strong>Dica:</strong> Use apenas um &lt;h1&gt; por página para otimização SEO!</p>
+        </section>
+
+        <hr>
+
+        <section class="secao-paragrafos">
+            <h2>Parágrafos e Formatação de Texto</h2>
+            <p>A tag &lt;p&gt; define parágrafos em HTML. Cada parágrafo é automaticamente separado por margens.</p>
+            
+            <p>Este é um exemplo de parágrafo normal em HTML.<br>
+            Aqui usamos &lt;br&gt; para quebra de linha forçada.<br>
+            Perceba que todas as linhas pertencem ao mesmo parágrafo.</p>
+            
+            <p>Podemos criar múltiplos parágrafos para organizar melhor nosso conteúdo. Cada novo &lt;p&gt; inicia um bloco de texto separado com espaçamento automático.</p>
+        </section>
+
+        <hr>
+
+        <section class="secao-comentarios">
+            <h2>Comentários em HTML</h2>
+            <p>Comentários são trechos de código ignorados pelo navegador, mas muito úteis para desenvolvedores.</p>
+            
+            <p><strong>Uso dos comentários:</strong></p>
+            <ul>
+                <li>Explicar trechos complexos de código</li>
+                <li>Desativar temporariamente partes do HTML</li>
+                <li>Devar notas para outros desenvolvedores</li>
+                <li>Organizar seções do código</li>
+            </ul>
+            
+            <!-- Exemplo de comentário: -->
+            <!-- 
+                Serve pra separar algumas seções e te lembrar do que se trata
+                Informa pra outra pessoa que também vai mexer no código algo relacionado ao código
+            -->
+            
+            <p><em>Os comentários acima não aparecem para os usuários finais!</em></p>
+        </section>
+
+        <hr>
+
+        <section class="secao-estrutura">
+            <h2>Estrutura Básica de um Documento HTML</h2>
+            <p>Toda página HTML segue uma estrutura fundamental:</p>
+            
+            <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="pt-br"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Título da Página&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Meu Primeiro Site&lt;/h1&gt;
+    &lt;p&gt;Este é um parágrafo de exemplo.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+            </pre>
+            
+            <p><strong>Elementos essenciais:</strong></p>
+            <ul>
+                <li><strong>&lt;!DOCTYPE html&gt;</strong> - Define o tipo de documento</li>
+                <li><strong>&lt;html&gt;</strong> - Elemento raiz de toda página</li>
+                <li><strong>&lt;head&gt;</strong> - Contém metadados e links</li>
+                <li><strong>&lt;body&gt;</strong> - Contém o conteúdo visível</li>
+            </ul>
+        </section>
+    </main>
+
+    <script src="../assets/script/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/style/page4.css">
+    
+    <title>MEU SITE</title>
+
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">
+            <img src="../assets/img/logo.png" width="120px" height="120px" href="../index.html">  
+            <span>ByteHub</span>
+        </a>
+        <div class="menu">
+        </div>
+        
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="#">Cursos ▼</a>
+                <ul>
+                    <li><a href="../pages/page2.html">HTML Basico</a></li>
+                    <li><a href="../pages/page3.html">CSS Basico</a></li>
+                    <li><a href="../pages/page4.html">JavaScript</a></li>
+                    <li><a href="../pages/page5.html">Web Design</a></li>
+                </ul>
+                <li><a href="../pages/page6.html">Contato</a></li>
+                </li>
+            </ul>
+        </nav>
+    </header>    
+
+    <main class="conteudo-exercicio">
+        <h1>JavaScript: Citações, Listas e Tabelas</h1>
+
+        <section class="secao-citacoes">
+            <h2>Citações em Documentação</h2>
+            
+            <blockquote cite="https://developer.mozilla.org/en-US/docs/Web/JavaScript">
+                <p>"JavaScript é uma linguagem de script orientada a objetos e multiplataforma. É uma linguagem pequena e leve. Dentro de um ambiente de host (por exemplo, um navegador web), o JavaScript pode ser conectado aos objetos de seu ambiente para fornecer controle programático sobre eles."</p>
+                <footer>- MDN Web Docs, Mozilla Foundation</footer>
+            </blockquote>
+
+            <p>Como Brendan Eich, criador do JavaScript, disse: <q>JavaScript sempre foi sobre dar poder às pessoas para construir coisas na web.</q></p>
+
+            <blockquote cite="https://eloquentjavascript.net/">
+                <p>"A linguagem JavaScript foi introduzida em 1995 como uma forma de adicionar programas às páginas web no navegador Netscape Navigator. A linguagem não possuía nenhuma relação com Java, além de uma sintaxe superficial."</p>
+                <footer>- Marijn Haverbeke, "Eloquent JavaScript"</footer>
+            </blockquote>
+        </section>
+
+        <hr>
+
+        <section class="secao-listas">
+            <h2>Listas de Comandos JavaScript</h2>
+            
+            <h3>Tipos de Dados Primitivos (Lista Não Ordenada)</h3>
+            <ul>
+                <li><code>string</code> - Texto e caracteres</li>
+                <li><code>number</code> - Números inteiros e decimais</li>
+                <li><code>boolean</code> - Valores verdadeiro ou falso</li>
+                <li><code>undefined</code> - Valor não definido</li>
+                <li><code>null</code> - Valor nulo intencional</li>
+                <li><code>symbol</code> - Valor único e imutável</li>
+            </ul>
+
+            <h3>Passos para Criar uma Função (Lista Ordenada)</h3>
+            <ol>
+                <li>Use a palavra-chave <code>function</code></li>
+                <li>Defina um nome descritivo para a função</li>
+                <li>Adicione parênteses para os parâmetros</li>
+                <li>Inclua chaves <code>{}</code> para o corpo da função</li>
+                <li>Escreva o código dentro das chaves</li>
+                <li>Use <code>return</code> para retornar valores (opcional)</li>
+            </ol>
+
+            <h3>Métodos de Array Comuns</h3>
+            <ul>
+                <li><code>.push()</code> - Adiciona elemento no final</li>
+                <li><code>.pop()</code> - Remove último elemento</li>
+                <li><code>.shift()</code> - Remove primeiro elemento</li>
+                <li><code>.unshift()</code> - Adiciona elemento no início</li>
+                <li><code>.forEach()</code> - Executa função para cada item</li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <section class="secao-tabelas">
+            <h2>Tabelas de Referência JavaScript</h2>
+            
+            <table border="1">
+                <caption>Operadores JavaScript</caption>
+                <thead>
+                    <tr>
+                        <th>Operador</th>
+                        <th>Descrição</th>
+                        <th>Exemplo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>+</code></td>
+                        <td>Adição ou concatenação</td>
+                        <td><code>5 + 3 // 8</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>-</code></td>
+                        <td>Subtração</td>
+                        <td><code>10 - 4 // 6</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>*</code></td>
+                        <td>Multiplicação</td>
+                        <td><code>3 * 4 // 12</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>/</code></td>
+                        <td>Divisão</td>
+                        <td><code>15 / 3 // 5</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>===</code></td>
+                        <td>Igualdade estrita</td>
+                        <td><code>5 === '5' // false</code></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <br>
+
+            <table border="1">
+                <caption>Métodos de String</caption>
+                <thead>
+                    <tr>
+                        <th>Método</th>
+                        <th>Descrição</th>
+                        <th>Retorno</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>.length</code></td>
+                        <td>Comprimento da string</td>
+                        <td>Número</td>
+                    </tr>
+                    <tr>
+                        <td><code>.toUpperCase()</code></td>
+                        <td>Converte para maiúsculas</td>
+                        <td>String</td>
+                    </tr>
+                    <tr>
+                        <td><code>.toLowerCase()</code></td>
+                        <td>Converte para minúsculas</td>
+                        <td>String</td>
+                    </tr>
+                    <tr>
+                        <td><code>.includes()</code></td>
+                        <td>Verifica se contém texto</td>
+                        <td>Boolean</td>
+                    </tr>
+                    <tr>
+                        <td><code>.slice()</code></td>
+                        <td>Extrai parte da string</td>
+                        <td>String</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <br>
+
+            <table border="1">
+                <caption>Controle de Versões JavaScript</caption>
+                <thead>
+                    <tr>
+                        <th>Versão</th>
+                        <th>Ano</th>
+                        <th>Principais Recursos</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>ES5</td>
+                        <td>2009</td>
+                        <td>JSON, strict mode, array methods</td>
+                    </tr>
+                    <tr>
+                        <td>ES6</td>
+                        <td>2015</td>
+                        <td>let/const, arrow functions, classes</td>
+                    </tr>
+                    <tr>
+                        <td>ES2016</td>
+                        <td>2016</td>
+                        <td>Array.includes(), exponentation operator</td>
+                    </tr>
+                    <tr>
+                        <td>ES2017</td>
+                        <td>2017</td>
+                        <td>async/await, string padding</td>
+                    </tr>
+                    <tr>
+                        <td>ES2018</td>
+                        <td>2018</td>
+                        <td>Rest/spread properties, Promise.finally()</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>    
+    
+    <script src="../assets/script/script.js"></script>
+</body>
+</html>

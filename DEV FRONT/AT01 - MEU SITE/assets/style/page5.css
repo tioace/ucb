@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("../style/menu.css");
+@import url(../style/page2.css);
+
+
+
+/* Estilos específicos para a página de Web Design */
+.secao-links .exemplos-links {
+    background: #f8f9fa;
+    padding: 25px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.exemplos-links h3 {
+    color: #2c3e50;
+    margin: 20px 0 10px 0;
+    border-left: 4px solid #0a2a24;
+    padding-left: 10px;
+}
+
+.exemplos-links a {
+    background: #036c59;
+    color: white;
+    padding: 8px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 5px;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.exemplos-links a:hover {
+    background: #34ad97;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Estilos para galeria de imagens */
+.galeria-imagens {
+    margin: 25px 0;
+}
+
+.imagem-container {
+    text-align: center;
+    margin: 25px 0;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.legenda {
+    font-style: italic;
+    color: #7f8c8d;
+    margin-top: 10px;
+    font-size: 0.9em;
+}
+
+.tamanhos-imagens {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.img-item {
+    text-align: center;
+}
+
+.img-item img {
+    border: 3px solid #bdc3c7;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.img-item img:hover {
+    transform: scale(1.05);
+}
+
+/* Estilos para imagens cliqueáveis */
+.imagem-cliqueavel {
+    text-align: center;
+    padding: 30px;
+    background: linear-gradient(135deg, #0a2a24 0%, #5eecd2 100%);
+    border-radius: 15px;
+    margin: 25px 0;
+}
+
+.imagem-cliqueavel h3 {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.link-imagem img {
+    border: 4px solid white;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+}
+
+.link-imagem:hover img {
+    transform: scale(1.1) rotate(2deg);
+    border-color: #f1c40f;
+}
+
+.dica {
+    color: #f1c40f;
+    font-weight: bold;
+    margin-top: 15px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+/* Grid de links com imagens */
+.grid-links-imagens {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    margin: 25px 0;
+}
+
+.card-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    padding: 15px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.card-link:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.card-link img {
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.card-link span {
+    color: #2c3e50;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Seção de dicas */
+.dicas-lista {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    margin: 25px 0;
+}
+
+.dica-item {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.dica-item h3 {
+    color: #e74c3c;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #f39c12;
+    padding-bottom: 8px;
+}
+
+.dica-item ul {
+    list-style: none;
+    padding: 0;
+}
+
+.dica-item li {
+    margin: 10px 0;
+    padding: 8px;
+    background: #f8f9fa;
+    border-radius: 5px;
+    border-left: 3px solid #27ae60;
+}
+
+.dica-item code {
+    background: #2c3e50;
+    color: #ecf0f1;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-size: 0.9em;
+}
+
+
+@media (max-width: 768px) {
+    .tamanhos-imagens {
+        flex-direction: column;
+    }
+    
+    .grid-links-imagens {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .dicas-lista {
+        grid-template-columns: 1fr;
+    }
+    
+    .exemplos-links a {
+        display: block;
+        margin: 10px 0;
+        text-align: center;
+    }
+}

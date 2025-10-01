@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/style/page6.css">
+
+    <title>MEU SITE</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">
+            <img src="../assets/img/logo.png" width="120px" height="120px" href="../index.html">  
+            <span>ByteHub</span>
+        </a>
+        <div class="menu">
+        </div>
+        
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="#">Cursos ▼</a>
+                <ul>
+                    <li><a href="../pages/page2.html">HTML Basico</a></li>
+                    <li><a href="../pages/page3.html">CSS Basico</a></li>
+                    <li><a href="../pages/page4.html">JavaScript</a></li>
+                    <li><a href="../pages/page5.html">Web Design</a></li>
+                </ul>
+                <li><a href="../pages/page6.html">Contato</a></li>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main class="conteudo-exercicio">
+        <h1>Contato - Formulários HTML</h1>
+
+        <section class="secao-intro">
+            <h2>Formulário de Contato</h2>
+            <p>Preencha o formulário abaixo para entrar em contato conosco. Todos os campos marcados com * são obrigatórios.</p>
+        </section>
+
+        <form action="#" method="POST" class="formulario-contato">
+            <fieldset>
+                <legend>Formulário de Contato</legend>
+                
+                <div class="campo-grupo">
+                    <label for="nome">Nome Completo *</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
+                </div>
+
+                <div class="campo-grupo">
+                    <label for="email">E-mail *</label>
+                    <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+                </div>
+
+                <div class="campo-grupo">
+                    <label for="senha">Senha *</label>
+                    <input type="password" id="senha" name="senha" placeholder="Crie uma senha segura" required>
+                </div>
+
+                <div class="campo-grupo">
+                    <label>Gênero *</label>
+                    <div class="grupo-radio">
+                        <input type="radio" id="masculino" name="genero" value="masculino" required>
+                        <label for="masculino">Masculino</label>
+                        
+                        <input type="radio" id="feminino" name="genero" value="feminino">
+                        <label for="feminino">Feminino</label>
+                        
+                        <input type="radio" id="outro" name="genero" value="outro">
+                        <label for="outro">Outro</label>
+                    </div>
+                </div>
+
+                <div class="campo-grupo">
+                    <label>Interesses em Cursos *</label>
+                    <div class="grupo-checkbox">
+                        <input type="checkbox" id="html" name="interesses" value="html">
+                        <label for="html">HTML</label>
+                        
+                        <input type="checkbox" id="css" name="interesses" value="css">
+                        <label for="css">CSS</label>
+                        
+                        <input type="checkbox" id="javascript" name="interesses" value="javascript">
+                        <label for="javascript">JavaScript</label>
+
+                        <input type="checkbox" id="webdesign" name="interesses" value="webdesign">
+                        <label for="webdesign">Web Design</label>
+
+                    </div>
+                </div>
+
+                <div class="campo-grupo">
+                    <label for="estado">Seu Estado *</label>
+                    <select id="estado" name="estado" required>
+                        <option value="" disabled selected>Selecione seu estado...</option>
+                        <option value="sp">São Paulo</option>
+                        <option value="rj">Rio de Janeiro</option>
+                        <option value="mg">Minas Gerais</option>
+                        <option value="es">Espírito Santo</option>
+                        <option value="pr">Paraná</option>
+                        <option value="sc">Santa Catarina</option>
+                        <option value="rs">Rio Grande do Sul</option>
+                    </select>
+                </div>
+
+                <div class="campo-grupo">
+                    <label for="mensagem">Mensagem *</label>
+                    <textarea id="mensagem" name="mensagem" placeholder="Digite sua mensagem aqui..." rows="6" required></textarea>
+                </div>
+
+                <div class="campo-grupo">
+                    <label for="nivel">Nível de Experiência</label>
+                    <select id="nivel" name="nivel">
+                        <option value="" selected>Selecione seu nível...</option>
+                        <option value="iniciante">Iniciante</option>
+                        <option value="intermediario">Intermediário</option>
+                        <option value="avancado">Avançado</option>
+                    </select>
+                </div>
+
+                <div class="campo-grupo">
+                    <label for="telefone">Telefone</label>
+                    <input type="tel" id="telefone" name="telefone" placeholder="(11) 99999-9999">
+                </div>
+
+                <div class="campo-grupo">
+                    <label for="data">Data de Nascimento</label>
+                    <input type="date" id="data" name="data_nascimento">
+                </div>
+
+                <div class="grupo-botoes">
+                    <input type="submit" value="📧 Enviar Formulário" class="btn btn-enviar">
+                    <input type="reset" value="🗑️ Limpar Campos" class="btn btn-limpar">
+                </div>
+            </fieldset>
+        </form>
+
+        <hr>
+
+        <section class="secao-info-contato">
+            <h2>Outras Formas de Contato</h2>
+            <div class="info-contatos">
+                <div class="info-item">
+                    <h3>📧 E-mail</h3>
+                    <p>contato@codelearn.com.br</p>
+                </div>
+                <div class="info-item">
+                    <h3>📞 Telefone</h3>
+                    <p>(11) 9999-9999</p>
+                </div>
+                <div class="info-item">
+                    <h3>📍 Endereço</h3>
+                    <p>Rua das Tecnologias, 123<br>São Paulo - SP</p>
+                </div>
+                <div class="info-item">
+                    <h3>🕒 Horário de Atendimento</h3>
+                    <p>Segunda a Sexta: 9h às 18h<br>Sábado: 9h às 13h</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="secao-dicas">
+            <h2>💡 Dicas sobre Formulários HTML</h2>
+            <div class="dicas-lista">
+                <div class="dica-item">
+                    <h3>Campos Obrigatórios</h3>
+                    <ul>
+                        <li>Use o atributo <code>required</code> para campos obrigatórios</li>
+                        <li>Forneça feedback visual com <code>:invalid</code> e <code>:valid</code></li>
+                        <li>Use <code>placeholder</code> para exemplos de preenchimento</li>
+                    </ul>
+                </div>
+                
+                <div class="dica-item">
+                    <h3>Tipos de Input</h3>
+                    <ul>
+                        <li><code>type="email"</code> - Validação automática de e-mail</li>
+                        <li><code>type="password"</code> - Oculta caracteres digitados</li>
+                        <li><code>type="tel"</code> - Otimizado para números de telefone</li>
+                        <li><code>type="date"</code> - Seletor de datas nativo</li>
+                    </ul>
+                </div>
+
+                <div class="dica-item">
+                    <h3>Organização</h3>
+                    <ul>
+                        <li>Use <code>fieldset</code> para agrupar campos relacionados</li>
+                        <li><code>legend</code> fornece título para o grupo</li>
+                        <li>Associe <code>label</code> com <code>for</code> e <code>id</code></li>
+                        <li>Agrupe radio buttons com o mesmo <code>name</code></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="../assets/script/script.js"></script>
+
+</body>
+</html>

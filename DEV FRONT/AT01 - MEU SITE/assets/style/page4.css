@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("../style/menu.css");
+@import url(../style/page2.css);
+
+
+
+/* Estilos específicos para a página de JavaScript */
+.secao-citacoes blockquote {
+    background: #e8f4fd;
+    border-left: 4px solid #3bbea6;
+    padding: 20px;
+    margin: 15px 0;
+    font-style: italic;
+}
+
+.secao-citacoes blockquote footer {
+    text-align: right;
+    font-style: normal;
+    font-weight: bold;
+    color: #7f8c8d;
+    margin-top: 10px;
+}
+
+.secao-citacoes q {
+    background: #fff3cd;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-style: italic;
+}
+
+/* Estilos para listas */
+.secao-listas h3 {
+    color: #0a2a24;
+    margin: 25px 0 15px 0;
+    border-bottom: 2px solid #e74c3c;
+    padding-bottom: 5px;
+}
+
+.secao-listas ul, .secao-listas ol {
+    background: #f8f9fa;
+    padding: 20px 20px 20px 40px;
+    border-radius: 8px;
+    margin: 15px 0;
+}
+
+.secao-listas li {
+    margin: 10px 0;
+    padding: 5px;
+}
+
+.secao-listas code {
+    background: #2c3e50;
+    color: #ecf0f1;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-family: 'Courier New', monospace;
+}
+
+/* Estilos para tabelas */
+.secao-tabelas table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.secao-tabelas caption {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #2c3e50;
+    margin: 15px 0;
+    padding: 10px;
+    background: #0a2a24;
+    color: white;
+    border-radius: 5px 5px 0 0;
+}
+
+.secao-tabelas th {
+    background: #0a2a24;
+    color: white;
+    padding: 12px;
+    text-align: left;
+    font-weight: bold;
+}
+
+.secao-tabelas td {
+    padding: 10px;
+    border: 1px solid #bdc3c7;
+}
+
+.secao-tabelas tr:nth-child(even) {
+    background: #ecf0f1;
+}
+
+.secao-tabelas tr:hover {
+    background: #d6eaf8;
+}
+
+.secao-tabelas code {
+    background: #0a2a24;
+    color: #ecf0f1;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-family: 'Courier New', monospace;
+}
+
+
+@media (max-width: 768px) {
+    .secao-tabelas table {
+        display: block;
+        overflow-x: auto;
+    }
+    
+    .secao-listas ul, .secao-listas ol {
+        padding: 15px 15px 15px 30px;
+    }
+}

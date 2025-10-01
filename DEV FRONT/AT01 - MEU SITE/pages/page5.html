@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/style/page5.css">    
+    
+    <title>MEU SITE</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">
+            <img src="../assets/img/logo.png" width="120px" height="120px" href="../index.html">  
+            <span>ByteHub</span>
+        </a>
+        <div class="menu">
+        </div>
+        
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="#">Cursos ▼</a>
+                <ul>
+                    <li><a href="../pages/page2.html">HTML Basico</a></li>
+                    <li><a href="../pages/page3.html">CSS Basico</a></li>
+                    <li><a href="../pages/page4.html">JavaScript</a></li>
+                    <li><a href="../pages/page5.html">Web Design</a></li>
+                </ul>
+                <li><a href="../pages/page6.html">Contato</a></li>
+                </li>
+            </ul>
+        </nav>
+    </header>    
+
+    <main class="conteudo-exercicio">
+        <h1>Web Design: Links e Imagens</h1>
+
+        <section class="secao-links">
+            <h2>Links (Âncoras) em Web Design</h2>
+            
+            <p>Os links são fundamentais para a navegação na web. Veja os diferentes tipos:</p>
+            
+            <div class="exemplos-links">
+                <h3>Link Externo (Abre em Nova Aba)</h3>
+                <p>
+                    <a href="https://www.w3.org" target="_blank" rel="noopener noreferrer">
+                        🔗 W3C - World Wide Web Consortium
+                    </a>
+                    - Este link abre o site oficial do W3C em uma nova aba do navegador.
+                </p>
+
+                <h3>Link Interno (Navegação no Site)</h3>
+                <p>
+                    <a href="../index.html">🏠 Voltar para a Página Principal</a>
+                    - Este link retorna para a página inicial do nosso site.
+                </p>
+
+                <h3>Links para Outras Páginas do Curso</h3>
+                <p>
+                    <a href="page2.html">📄 HTML Básico</a> | 
+                    <a href="page3.html">🎨 CSS Básico</a> | 
+                    <a href="page4.html">⚡ JavaScript</a> |
+                    <a href="page6.html">📞 Contato</a>
+                </p>
+            </div>
+        </section>
+
+        <hr>
+
+        <section class="secao-imagens">
+            <h2>Imagens em Web Design</h2>
+            <p>As imagens são essenciais para criar experiências visuais atraentes na web.</p>
+
+            <div class="galeria-imagens">
+                <h3>Imagem Local (Do Projeto)</h3>
+                <div class="imagem-container">
+                    <img src="../assets/img/logo.png" alt="Logo do ByteHub - Plataforma de cursos online" width="150">
+                    <p class="legenda">Logo do nosso projeto - tamanho: 150px</p>
+                </div>
+
+                <h3>Imagem da Web (URL Externa)</h3>
+                <div class="imagem-container">
+                    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80" 
+                         alt="Código fonte em um editor de texto com tema escuro" 
+                         width="300">
+                    <p class="legenda">Imagem de código fonte do Unsplash - tamanho: 300px</p>
+                </div>
+
+                <h3>Imagens com Diferentes Tamanhos</h3>
+                <div class="tamanhos-imagens">
+                    <div class="img-item">
+                        <img src="../assets/img/logo.png" alt="Logo pequeno" width="80">
+                        <p>Pequeno (80px)</p>
+                    </div>
+                    <div class="img-item">
+                        <img src="../assets/img/logo.png" alt="Logo médio" width="150">
+                        <p>Médio (150px)</p>
+                    </div>
+                    <div class="img-item">
+                        <img src="../assets/img/logo.png" alt="Logo grande" width="250">
+                        <p>Grande (250px)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <section class="secao-imagem-link">
+            <h2>Imagem Cliqueável</h2>
+            <p>Transformando imagens em links de navegação:</p>
+            
+            <div class="imagem-cliqueavel">
+                <h3>Clique na Logo para Voltar ao Início</h3>
+                <a href="../index.html" class="link-imagem">
+                    <img src="../assets/img/logo.png" 
+                         alt="Logo ByteHub - Clique para voltar à página inicial" 
+                         width="200">
+                </a>
+                <p class="dica">✨ Dica: Passe o mouse sobre a imagem para ver o efeito!</p>
+            </div>
+
+            <div class="exemplos-adicionais">
+                <h3>Mais Exemplos de Imagens Cliqueáveis</h3>
+                <div class="grid-links-imagens">
+                    <a href="page2.html" class="card-link">
+                        <img src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=150&q=80" 
+                             alt="Código HTML" 
+                             width="150">
+                        <span>HTML Básico</span>
+                    </a>
+                    
+                    <a href="page3.html" class="card-link">
+                        <img src="../assets/img/img3.jpeg" 
+                             alt="Código CSS" 
+                             width="150">
+                        <span>CSS Básico</span>
+                    </a>
+                    
+                    <a href="page4.html" class="card-link">
+                        <img src="https://images.unsplash.com/photo-1627398242454-45a1465c2479?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=150&q=80" 
+                             alt="Código JavaScript" 
+                             width="150">
+                        <span>JavaScript</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <section class="secao-dicas">
+            <h2>💡 Dicas de Web Design</h2>
+            <div class="dicas-lista">
+                <div class="dica-item">
+                    <h3>Para Links</h3>
+                    <ul>
+                        <li>Sempre use textos descritivos nos links</li>
+                        <li>Links externos devem abrir em nova aba (<code>target="_blank"</code>)</li>
+                        <li>Mantenha a consistência nos estilos de links</li>
+                        <li>Use <code>:hover</code> para feedback visual</li>
+                    </ul>
+                </div>
+                
+                <div class="dica-item">
+                    <h3>Para Imagens</h3>
+                    <ul>
+                        <li>Sempre use o atributo <code>alt</code> para acessibilidade</li>
+                        <li>Otimize o tamanho das imagens para web</li>
+                        <li>Use formatos apropriados (JPEG, PNG, WebP)</li>
+                        <li>Defina width e height para evitar layout shift</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="../assets/script/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/style/page2.css">
+
+    <title>MEU SITE</title>
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo">
+            <img src="../assets/img/logo.png" width="120px" height="120px" href="../index.html">  
+            <span>ByteHub</span>
+        </a>
+        <div class="menu">
+        </div>
+        
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="#">Cursos ▼</a>
+                <ul>
+                    <li><a href="../pages/page2.html">HTML Basico</a></li>
+                    <li><a href="../pages/page3.html">CSS Basico</a></li>
+                    <li><a href="../pages/page4.html">JavaScript</a></li>
+                    <li><a href="../pages/page5.html">Web Design</a></li>
+                </ul>
+                <li><a href="../pages/page6.html">Sobre</a></li>
+                </li>
+            </ul>
+        </nav>
+    </header> 
+
+    <main class="conteudo-exercicio">
+        <h1>CSS Básico: Formatação de Texto e Blocos Pré-formatados</h1>
+
+        <section class="secao-formatacao">
+            <h2>Formatação de Texto com CSS</h2>
+            <p>O CSS nos permite controlar a aparência do texto. Veja as principais tags de formatação:</p>
+            
+            <div class="exemplos-formatacao">
+                <p><b>Texto em negrito</b> usando &lt;b&gt; - <em>apenas altera a aparência visual</em></p>
+                <p><strong>Texto importante</strong> usando &lt;strong&gt; - <em>indica importância semântica</em></p>
+                
+                <p><i>Texto em itálico</i> usando &lt;i&gt; - <em>para voz alternativa ou humor</em></p>
+                <p><em>Texto com ênfase</em> usando &lt;em&gt; - <em>para ênfase semântica</em></p>
+                
+                <p>Texto com <mark>destaque especial</mark> usando &lt;mark&gt; - <em>como um marca-texto</em></p>
+                
+                <p><small>Texto com tamanho reduzido</small> usando &lt;small&gt; - <em>para notas e avisos legais</em></p>
+                
+                <p><del>Texto que foi removido</del> usando &lt;del&gt; e <ins>texto que foi inserido</ins> usando &lt;ins&gt; - <em>para controle de versões</em></p>
+                
+                <p>Fórmula química da água: H<sub>2</sub>O usando &lt;sub&gt; - <em>subscrito para fórmulas</em></p>
+                
+                <p>Teorema de Pitágoras: a<sup>2</sup> + b<sup>2</sup> = c<sup>2</sup> usando &lt;sup&gt; - <em>sobrescrito para matemática</em></p>
+            </div>
+        </section>
+
+        <hr>
+
+        <section class="secao-preformatado">
+            <h2>Blocos de Código Pré-formatados</h2>
+            <p>A tag &lt;pre&gt; preserva espaços, quebras de linha e tabulações exatamente como foram escritos no código fonte.</p>
+            
+            <h3>Exemplo de CSS Básico:</h3>
+            <pre>
+/* Estilos para títulos */
+h1 {
+    color: #2c3e50;
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Estilos para parágrafos */
+p {
+    color: #34495e;
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin: 15px 0;
+}
+
+/* Estilos para links */
+a {
+    color: #3498db;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #2980b9;
+    text-decoration: underline;
+}
+            </pre>
+
+            <h3>Estrutura HTML com CSS:</h3>
+            <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;style&gt;
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f8f9fa;
+        }
+        
+        .destaque {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin: 10px 0;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div class="container"&gt;
+        &lt;div class="destaque"&gt;
+            Este é um bloco de destaque estilizado com CSS!
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+            </pre>
+
+            <h3>Arte CSS com Caracteres:</h3>
+            <pre>
+    ╔══════════════════════════╗
+    ║       BEM-VINDO AO       ║
+    ║        CSS BÁSICO        ║
+    ╚══════════════════════════╝
+       │
+       │  ✦ Cores
+       │  ✦ Fontes  
+       │  ✦ Layout
+       │  ✦ Animações
+       │
+    ════════════════════════════
+            </pre>
+        </section>
+
+        <hr>
+
+        <section class="secao-diferencas">
+            <h2>Diferenças Semânticas Importantes</h2>
+            
+            <div class="comparacao">
+                <div class="item-comparacao">
+                    <h3>&lt;b&gt; vs &lt;strong&gt;</h3>
+                    <p><b>Texto em negrito</b> - Apenas visual</p>
+                    <p><strong>Texto importante</strong> - Semântico (leitura em voz alta)</p>
+                </div>
+                
+                <div class="item-comparacao">
+                    <h3>&lt;i&gt; vs &lt;em&gt;</h3>
+                    <p><i>Texto em itálico</i> - Apenas visual</p>
+                    <p><em>Texto com ênfase</em> - Semântico (alteração de tom)</p>
+                </div>
+            </div>
+            
+            <p><strong>Dica:</strong> Prefira <strong>&lt;strong&gt;</strong> e <strong>&lt;em&gt;</strong> para melhor acessibilidade e SEO!</p>
+        </section>
+    </main>
+
+    <script src="../assets/script/script.js"></script>
+</body>
+</html>
