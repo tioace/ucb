@@ -76,11 +76,11 @@ public class Main {
                     System.out.print("Ano de publicacao: ");
                     int anoL = leitor.nextInt();
                     leitor.nextLine();
-                    System.out.print("Autor: ");
-                    String autor = leitor.nextLine();
+                    System.out.print("Edicao: ");
+                    String edicao = leitor.nextLine();
                     
                     
-                    Material ml= new Livro(tituloL, anoL, autor); 
+                    Material ml= new Livro(tituloL, anoL, edicao); 
                     materiais.add(ml);
                     System.out.println("Livro cadastrado!\n");
                     
@@ -91,11 +91,12 @@ public class Main {
                     String tituloR = leitor.nextLine();
                     System.out.print("Ano de publicacao: ");
                     int anoR = leitor.nextInt();
-                    System.out.print("Edicao: ");
-                    String edicao = leitor.nextLine();
-                    leitor.nextLine();
+                    System.out.print("Autor: ");
+                    leitor.nextLine(); 
+                    String autor = leitor.nextLine();
                     
-                    Material mr = new Revista(tituloR, anoR, edicao);
+                    
+                    Material mr = new Revista(tituloR, anoR, autor);
                     materiais.add(mr);
                     System.out.println("Revista cadastrada!\n");
                     
@@ -123,17 +124,19 @@ public class Main {
                     for (int i = 0; i < pessoas.size(); i++) { 
                         System.out.println(i + " - " + pessoas.get(i).getNome());
                     }
+                    System.out.print("Opcao: ");
                     int idxUsuario = leitor.nextInt();
                     leitor.nextLine();
                     
-                    System.out.println("Escolha o material (indice):");
+                    System.out.println("\nEscolha o material (indice):");
                     for (int i = 0; i < materiais.size(); i++) {
                         System.out.println(i + " - " + materiais.get(i).getTitulo());
                     }
+                    System.out.print("Opcao: ");
                     int idxMaterial = leitor.nextInt();
                     leitor.nextLine();
                     
-                    System.out.print("Data de emprestimo: ");
+                    System.out.print("\nData de emprestimo: ");
                     String dataE = leitor.nextLine();
                     System.out.print("Data de devolucao: ");
                     String dataD = leitor.nextLine();

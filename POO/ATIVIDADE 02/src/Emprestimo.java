@@ -47,6 +47,6 @@ public class Emprestimo {
 
 
     public void exibirDetalhes(){
-        System.out.println(String.format("PESSOA: %s\nMATERIAL: %s\nDATA DE EMPRESTIMO: %s\nDATA DE DEVOLUCAO: %s\n", this.pessoa, this.material, this.dataEmprestimo, this.dataDevolucao));
+        System.out.println(String.format("PESSOA: %s\nMATERIAL: %s\nDATA DE EMPRESTIMO: %s\nDATA DE DEVOLUCAO: %s\n", pessoa.getNome(), this.material.getTitulo(), this.dataEmprestimo, this.dataDevolucao));
     }
 }
