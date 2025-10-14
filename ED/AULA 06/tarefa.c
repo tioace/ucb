@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-#include <tarefa.h>
+#include "tarefa.h"
 
 Lista * CriarLista(int C){
     Lista * L = malloc(sizeof(Lista)); 

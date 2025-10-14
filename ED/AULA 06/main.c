@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-#include <tarefa.h>
+#include "tarefa.h"
 
 int main(int argc, char const *argv[]){
     Tarefa T1 = {"Entrega do relatório de BD", "Rafael Souza", FEITO, 1.00, 4};
@@ -42,10 +42,4 @@ int main(int argc, char const *argv[]){
     printf("%d\n", Planner); 
 
     return 0;
-}
-
-
-
-void DestruirLista(Lista * L){
-
 }
