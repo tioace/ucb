@@ -63,8 +63,7 @@ header ul li a{
 
 header ul li a:hover{
     background: #556DBA;
-
-    
+    color: #fff;
 }
 
 header ul li ul{
