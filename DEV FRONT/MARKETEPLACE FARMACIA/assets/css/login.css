@@ -40,3 +40,70 @@ form{
   margin-top: 30px;
 }
 
+form .field{
+  position: relative;
+  height: 45px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.field input{
+  height: 100%;
+  width: 100%;
+  border: 1px solid #CACACA;
+  padding: 0 15px;
+}
+
+.eye-icon{
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  font-size: 18px;
+  color: #8b8b8b;
+}
+
+.form-link{
+  text-align: center;
+  margin-top: 10px; 
+}
+
+.form-link a, .form-link span{
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.form a{
+  text-decoration: none;
+  color: #556DBA;
+}
+
+.form a:hover{
+  text-decoration: underline;
+}
+
+.entrar-field input:hover{
+  background: #556DBA;
+  color: #fff;
+}
+
+.line{
+  position: relative;
+  height: 1px;
+  width: 100%;
+  margin: 36px 0;
+  background-color: #d4d4d4;
+}
+
+.line::before{
+  content: 'Ou';
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  color: #232836;
+  padding: 0 15px;
+} 
+
+  
