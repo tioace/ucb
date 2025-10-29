@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws NomeInvalidoException, EmailInvalidoException {
         Scanner leitor = new Scanner(System.in); 
         
         ArrayList<Pessoa> pessoas = new ArrayList<>();

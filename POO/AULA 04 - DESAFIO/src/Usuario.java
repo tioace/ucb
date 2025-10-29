@@ -1,9 +1,17 @@
 public class Usuario extends Pessoa {
     private Integer matricula; 
 
-    Usuario(String nome, String email, Integer matricula) {
+    Usuario(String nome, String email, Integer matricula) throws NomeInvalidoException, EmailInvalidoException {
         super(nome, email);
         this.matricula = matricula; 
+
+        if (nome == null || nome.length() < 1) {
+            throw new NomeInvalidoException(); 
+        }
+
+        if (email == null || email.length() < 1) {
+            throw new EmailInvalidoException(); 
+        }
     }
 
     public void setMatricula(int matricula) {
