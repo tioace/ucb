@@ -174,4 +174,3 @@ char * cidadeMenorVizinhanca(const char * nomeArquivo){
 
 
 }
-
