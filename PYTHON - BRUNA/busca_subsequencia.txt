@@ -1,0 +1,1 @@
+Subsequência 'TCAG' está presente? -> False
