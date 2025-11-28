@@ -27,7 +27,6 @@ public abstract class User {
         this.password = password;
     }
     
-    // Getters e Setters
     public Long getId() {
         return id;
     }

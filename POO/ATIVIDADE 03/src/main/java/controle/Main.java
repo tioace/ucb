@@ -11,16 +11,21 @@ public class Main {
 
         Scanner leitor = new Scanner(System.in);
         UserDAO dao = new UserDAO();
+        AutenticarServico authService = new AutenticarServico(dao);
 
         while (true) {
 
             System.out.println("\n===== MENU =====");
             System.out.println("1 - Cadastrar Usuário");
             System.out.println("2 - Consultar Usuário por Nome");
+            System.out.println("3 - Fazer Login");
+            System.out.println("4 - Logout");
+            System.out.println("5 - Verificar Usuário Logado");
             System.out.println("0 - Sair");
             System.out.print("Escolha: ");
             int opcao = leitor.nextInt();
             leitor.nextLine();
+            System.out.println("");
             
             if (opcao == 0) {
                 System.out.println("Encerrando...");
@@ -35,16 +40,19 @@ public class Main {
                 System.out.print("Escolha: ");
                 int escolha = leitor.nextInt();
                 leitor.nextLine();
+                
                 System.out.println("");
-
+                System.out.println("------------------------------------");
+                System.out.println("");
                 System.out.print("Nome: ");
                 String nome = leitor.nextLine();
-
+                
                 System.out.print("Senha: ");
                 String senha = leitor.nextLine();
-
+                
                 System.out.print("Token de Segurança: ");
                 String token = leitor.nextLine();
+                System.out.println("");
 
                 try {
                     User user;
@@ -59,7 +67,7 @@ public class Main {
                     System.out.println("Usuário cadastrado com sucesso!");
 
                 } catch (Exception e) {
-                    System.out.println("Erro ao cadastrar usuário: " + e.getMessage());
+                    e.printStackTrace();
                 }
             }
 
@@ -78,7 +86,35 @@ public class Main {
                     }
 
                 } catch (Exception e) {
-                    System.out.println("Erro na consulta: " + e.getMessage());
+                    e.printStackTrace();
+                }
+            }
+
+            else if (opcao == 3) {
+                System.out.print("\nUsername para login: ");
+                String username = leitor.nextLine();
+                
+                System.out.print("Password: ");
+                String password = leitor.nextLine();
+
+                boolean loginSucesso = authService.login(username, password);
+                if (loginSucesso) {
+                    System.out.println("Login realizado com sucesso!");
+                }
+            }
+
+            else if (opcao == 4) {
+                authService.logout();
+                System.out.println("Logout realizado!");
+            }
+
+            else if (opcao == 5) {
+                if (authService.isAuthenticated()) {
+                    User user = authService.getAtualUsuario();
+                    System.out.println("Usuário logado: " + user.getUsername());
+                    System.out.println("Tipo: " + (authService.isAdmin() ? "Admin" : "TemporaryAdmin"));
+                } else {
+                    System.out.println("Nenhum usuário logado.");
                 }
             }
 
