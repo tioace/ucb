@@ -1,0 +1,49 @@
+1779551886711	geckodriver	INFO	Listening on 127.0.0.1:53698
+1779551886748	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "53699" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\temp\\rust_mozprofileJGg6ZR"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1779551886940	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1779551887006	Marionette	INFO	Listening on port 65120
+WebDriver BiDi listening on ws://127.0.0.1:53699
+Read port: 65120
+1779551887112	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: services.settings: 
+  main/partitioning-exempt-urls Signature failed  InvalidSignatureError: Invalid content signature (main/partitioning-exempt-urls) using 'remote-settings.content-signature.mozilla.org-2026-06-16-11-43-46.chain'
+console.error: services.settings: 
+  main/partitioning-exempt-urls local data was corrupted
+console.warn: services.settings: main/partitioning-exempt-urls Signature verified failed. Retry from scratch
+console.error: services.settings: 
+  main/query-stripping Signature failed  InvalidSignatureError: Invalid content signature (main/query-stripping) using 'remote-settings.content-signature.mozilla.org-2026-06-16-11-43-46.chain'
+console.error: services.settings: 
+  main/query-stripping local data was corrupted
+console.warn: services.settings: main/query-stripping Signature verified failed. Retry from scratch
+console.error: services.settings: 
+  main/partitioning-exempt-urls Signature failed again InvalidSignatureError: Invalid content signature (main/partitioning-exempt-urls) using 'remote-settings.content-signature.mozilla.org-2026-06-16-11-43-46.chain'
+console.error: (new InvalidSignatureError("Invalid content signature (main/partitioning-exempt-urls) using 'remote-settings.content-signature.mozilla.org-2026-06-16-11-43-46.chain'", "resource://services-settings/RemoteSettingsClient.sys.mjs", 165))
+console.error: services.settings: 
+  main/fingerprinting-protection-overrides Signature failed  InvalidSignatureError: Invalid content signature (main/fingerprinting-protection-overrides) using 'remote-settings.content-signature.mozilla.org-2026-06-16-11-43-46.chain'
+console.error: services.settings: 
+  main/query-stripping Signature failed again InvalidSignatureError: Invalid content signature (main/query-stripping) using 'remote-settings.content-signature.mozilla.org-2026-06-16-11-43-46.chain'
+console.error: services.settings: 
+  main/fingerprinting-protection-overrides local data was corrupted
+console.warn: services.settings: main/fingerprinting-protection-overrides Signature verified failed. Retry from scratch
+console.error: (new InvalidSignatureError("Invalid content signature (main/query-stripping) using 'remote-settings.content-signature.mozilla.org-2026-06-16-11-43-46.chain'", "resource://services-settings/RemoteSettingsClient.sys.mjs", 165))
+console.error: services.settings: 
+  main/fingerprinting-protection-overrides Signature failed again InvalidSignatureError: Invalid content signature (main/fingerprinting-protection-overrides) using 'remote-settings.content-signature.mozilla.org-2026-06-16-11-43-46.chain'
+console.error: (new InvalidSignatureError("Invalid content signature (main/fingerprinting-protection-overrides) using 'remote-settings.content-signature.mozilla.org-2026-06-16-11-43-46.chain'", "resource://services-settings/RemoteSettingsClient.sys.mjs", 165))
+JavaScript error: https://www.testmuai.com/_next/static/chunks/framework-b21a9a9d949ebca4.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.testmuai.com/_next/static/chunks/framework-b21a9a9d949ebca4.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.testmuai.com/_next/static/chunks/framework-b21a9a9d949ebca4.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.testmuai.com/_next/static/chunks/framework-b21a9a9d949ebca4.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.testmuai.com/_next/static/chunks/framework-b21a9a9d949ebca4.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.testmuai.com/_next/static/chunks/framework-b21a9a9d949ebca4.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.testmuai.com/_next/static/chunks/framework-b21a9a9d949ebca4.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.testmuai.com/_next/static/chunks/framework-b21a9a9d949ebca4.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.testmuai.com/_next/static/chunks/framework-b21a9a9d949ebca4.js, line 1: Error: Minified React error #423; visit https://reactjs.org/docs/error-decoder.html?invariant=423 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://script.crazyegg.com/pages/scripts/0085/1990.js, line 1: Error: CE: multiple userscripts installed
+1779551894004	Marionette	INFO	Stopped listening on port 65120
+JavaScript warning: https://d33t2173eag6fx.cloudfront.net/script/app/inbound-se-script/ai-seller-init.57f6100e7d66a6655560.js, line 2: Script terminated by timeout at:
+a@https://d33t2173eag6fx.cloudfront.net/script/app/inbound-se-script/ai-seller-init.57f6100e7d66a6655560.js:2:33766
+
+Dynamically enable window occlusion 1

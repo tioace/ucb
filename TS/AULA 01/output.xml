@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.12.1 on win32)" generated="2026-05-23T13:04:35.168363" rpa="false" schemaversion="5">
+<suite id="s1" name="Script" source="C:\Users\nicholas.reis\Documents\ucb\TS\AULA 01\script.robot">
+<test id="s1-t1" name="Teste de pesquisa por Kedunjnar e verifica" line="18">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-05-23T13:04:35.374015" level="INFO">Opening browser 'firefox' to base url 'https://www.testmuai.com/selenium-playground/bootstrap-dual-list-box-demo/'.</msg>
+<arg>${bootstrap}</arg>
+<arg>firefox</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-05-23T13:04:35.374015" elapsed="2.331272"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-05-23T13:04:39.705462" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-05-23T13:04:37.705287" elapsed="2.000175"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-05-23T13:04:39.706467" level="INFO">Typing text 'Kedungjenar' into text field 'name=SearchDualList'.</msg>
+<arg>${boxSearch}</arg>
+<arg>Kedungjenar</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-23T13:04:39.705462" elapsed="0.054228"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${Kedungjenar}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-05-23T13:04:39.759690" elapsed="0.007107"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-05-23T13:04:39.766797" elapsed="0.596243"/>
+</kw>
+<status status="PASS" start="2026-05-23T13:04:35.374015" elapsed="4.989025"/>
+</test>
+<test id="s1-t2" name="Teste de pesquisa por Kedunjnar e segunda opcao nao visivel" line="25">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-05-23T13:04:40.365063" level="INFO">Opening browser 'firefox' to base url 'https://www.testmuai.com/selenium-playground/bootstrap-dual-list-box-demo/'.</msg>
+<arg>${bootstrap}</arg>
+<arg>firefox</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-05-23T13:04:40.365063" elapsed="1.958050"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-05-23T13:04:44.323458" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-05-23T13:04:42.323113" elapsed="2.000345"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-05-23T13:04:44.323458" level="INFO">Typing text 'Kedungjenar' into text field 'name=SearchDualList'.</msg>
+<arg>${boxSearch}</arg>
+<arg>Kedungjenar</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-23T13:04:44.323458" elapsed="0.051601"/>
+</kw>
+<kw name="Wait Until Element Is Not Visible" owner="SeleniumLibrary">
+<arg>${Danville}</arg>
+<doc>Waits until the element ``locator`` is not visible.</doc>
+<status status="PASS" start="2026-05-23T13:04:44.375059" elapsed="0.006011"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-05-23T13:04:44.381070" elapsed="0.580131"/>
+</kw>
+<status status="PASS" start="2026-05-23T13:04:40.363040" elapsed="4.600165"/>
+</test>
+<test id="s1-t3" name="Teste de pesquisa por Kedunjnar e terceira opcao nao visivel" line="32">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-05-23T13:04:44.963205" level="INFO">Opening browser 'firefox' to base url 'https://www.testmuai.com/selenium-playground/bootstrap-dual-list-box-demo/'.</msg>
+<arg>${bootstrap}</arg>
+<arg>firefox</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-05-23T13:04:44.963205" elapsed="1.928962"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-05-23T13:04:48.893213" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-05-23T13:04:46.892167" elapsed="2.001046"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-05-23T13:04:48.893213" level="INFO">Typing text 'Kedungjenar' into text field 'name=SearchDualList'.</msg>
+<arg>${boxSearch}</arg>
+<arg>Kedungjenar</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-23T13:04:48.893213" elapsed="0.050251"/>
+</kw>
+<kw name="Wait Until Element Is Not Visible" owner="SeleniumLibrary">
+<arg>${Mynamaki}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is not visible.</doc>
+<status status="PASS" start="2026-05-23T13:04:48.943464" elapsed="0.006464"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-05-23T13:04:48.949928" elapsed="0.569547"/>
+</kw>
+<status status="PASS" start="2026-05-23T13:04:44.963205" elapsed="4.556270"/>
+</test>
+<test id="s1-t4" name="Teste de pesquisa por Kedunjnar e manter Kedungjenar" line="40">
+<kw name="Skip" owner="BuiltIn">
+<msg time="2026-05-23T13:04:49.519475" level="SKIP">Skipped with Skip keyword.</msg>
+<doc>Skips the rest of the current test.</doc>
+<status status="SKIP" start="2026-05-23T13:04:49.519475" elapsed="0.000000">Skipped with Skip keyword.</status>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<arg>${bootstrap}</arg>
+<arg>firefox</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="NOT RUN" start="2026-05-23T13:04:49.519475" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2026-05-23T13:04:49.519475" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${boxSearch}</arg>
+<arg>Kedungjenar</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-05-23T13:04:49.519475" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2026-05-23T13:04:49.519475" elapsed="0.000000"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<arg>${Kedungjenar}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-05-23T13:04:49.519475" elapsed="0.000000"/>
+</kw>
+<kw name="Element Should Not Be Visible" owner="SeleniumLibrary">
+<arg>${Danville}</arg>
+<doc>Verifies that the element identified by ``locator`` is NOT visible.</doc>
+<status status="NOT RUN" start="2026-05-23T13:04:49.519475" elapsed="0.000000"/>
+</kw>
+<kw name="Element Should Not Be Visible" owner="SeleniumLibrary">
+<arg>${Mynamaki}</arg>
+<doc>Verifies that the element identified by ``locator`` is NOT visible.</doc>
+<status status="NOT RUN" start="2026-05-23T13:04:49.519475" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2026-05-23T13:04:49.519475" elapsed="0.000000"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2026-05-23T13:04:49.519475" elapsed="0.000000"/>
+</kw>
+<status status="SKIP" start="2026-05-23T13:04:49.519475" elapsed="0.000000">Skipped with Skip keyword.</status>
+</test>
+<test id="s1-t5" name="Teste de mensagem de alerta" line="53">
+<kw name="Skip" owner="BuiltIn">
+<msg time="2026-05-23T13:04:49.519475" level="SKIP">Skipped with Skip keyword.</msg>
+<doc>Skips the rest of the current test.</doc>
+<status status="SKIP" start="2026-05-23T13:04:49.519475" elapsed="0.000000">Skipped with Skip keyword.</status>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<arg>${checkbox-demo}</arg>
+<arg>firefox</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="NOT RUN" start="2026-05-23T13:04:49.523123" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2026-05-23T13:04:49.523123" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${checkboxSingleDemo}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-05-23T13:04:49.523123" elapsed="0.000000"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<arg>${text-checked}</arg>
+<arg>Checked!</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="NOT RUN" start="2026-05-23T13:04:49.523123" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2026-05-23T13:04:49.523123" elapsed="0.000000"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2026-05-23T13:04:49.523123" elapsed="0.000000"/>
+</kw>
+<status status="SKIP" start="2026-05-23T13:04:49.519475" elapsed="0.003648">Skipped with Skip keyword.</status>
+</test>
+<test id="s1-t6" name="Teste de seleção de checbox" line="62">
+<kw name="Skip" owner="BuiltIn">
+<msg time="2026-05-23T13:04:49.523123" level="SKIP">Skipped with Skip keyword.</msg>
+<doc>Skips the rest of the current test.</doc>
+<status status="SKIP" start="2026-05-23T13:04:49.523123" elapsed="0.000000">Skipped with Skip keyword.</status>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<arg>${checkbox-demo}</arg>
+<arg>firefox</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="NOT RUN" start="2026-05-23T13:04:49.523123" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2026-05-23T13:04:49.523123" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${checkboxSingleDemo}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-05-23T13:04:49.523123" elapsed="0.000000"/>
+</kw>
+<kw name="Checkbox Should Be Selected" owner="SeleniumLibrary">
+<arg>${checkboxSingleDemo}</arg>
+<doc>Verifies checkbox ``locator`` is selected/checked.</doc>
+<status status="NOT RUN" start="2026-05-23T13:04:49.523123" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2026-05-23T13:04:49.523123" elapsed="0.000000"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2026-05-23T13:04:49.523123" elapsed="0.000000"/>
+</kw>
+<status status="SKIP" start="2026-05-23T13:04:49.523123" elapsed="0.000000">Skipped with Skip keyword.</status>
+</test>
+<test id="s1-t7" name="Teste do Google.com" line="71">
+<kw name="Skip" owner="BuiltIn">
+<msg time="2026-05-23T13:04:49.523123" level="SKIP">Skipped with Skip keyword.</msg>
+<doc>Skips the rest of the current test.</doc>
+<status status="SKIP" start="2026-05-23T13:04:49.523123" elapsed="0.003063">Skipped with Skip keyword.</status>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<arg>${Google}</arg>
+<arg>firefox</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="NOT RUN" start="2026-05-23T13:04:49.526186" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2026-05-23T13:04:49.526186" elapsed="0.000000"/>
+</kw>
+<kw name="Get Title" owner="SeleniumLibrary">
+<var>${title}</var>
+<doc>Returns the title of the current page.</doc>
+<status status="NOT RUN" start="2026-05-23T13:04:49.526186" elapsed="0.000000"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${title}</arg>
+<arg>Google</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="NOT RUN" start="2026-05-23T13:04:49.526186" elapsed="0.000000"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2026-05-23T13:04:49.526186" elapsed="0.000000"/>
+</kw>
+<status status="SKIP" start="2026-05-23T13:04:49.523123" elapsed="0.003063">Skipped with Skip keyword.</status>
+</test>
+<status status="PASS" start="2026-05-23T13:04:35.172867" elapsed="14.354324"/>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="0" skip="4">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Script" id="s1" pass="3" fail="0" skip="4">Script</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
