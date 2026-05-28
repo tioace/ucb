@@ -12,6 +12,10 @@ app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'index.html'));
 })
 
+const apiROute = require('./routes/api');
+app.use(express.json()); 
+app.use('/api/users', apiROute);
+
 app.listen(port, () => {
   console.log(`Servidor funcionando ${port}`)
 })
