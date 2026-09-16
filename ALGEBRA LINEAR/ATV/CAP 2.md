@@ -49,7 +49,13 @@ Escalonando: L2 ← L2 − 2L1 e L3 ← L3 − 3L1:
 [0   3  -4   5]
 [0   7  -7   6]
 ```
-Depois L3 ← L3 − (7/3)L2 e normalizando, chega-se à forma reduzida:
+Depois L3 ← 7L2 - 3L3 e normalizando, chega-se à forma reduzida:
+```
+[1  -2  3  -1]
+[0  -3  4  -5]
+[0   0 -21  7]
+```
+
 ```
 [1  0  0   22/7]
 [0  1  0  -11/7]
